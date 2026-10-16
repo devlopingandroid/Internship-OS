@@ -1,0 +1,51 @@
+# ── Personal data and secrets ─────────────────────────────────────────────────
+backend/profile.json
+backend/profile.json.backup_phase1
+*.backup_phase1
+
+# ── SQLite databases (contains personal job tracking data) ────────────────────
+backend/data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ── Environment and secrets ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+
+# ── Python virtual environments and caches ────────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# ── IDE and OS ────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
